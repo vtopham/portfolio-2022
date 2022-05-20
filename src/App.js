@@ -30,6 +30,11 @@ function App() {
           <p>Email</p>
         </a>
       </div>
+      <div className = "resume-download-container">
+        <a className = "resume-download" href = "VTopham_Resume_2022.pdf" rel = "noreferrer" target = "_blank">
+          View Resume
+        </a>
+      </div>
 
       {/* TODO: Mobile links
 

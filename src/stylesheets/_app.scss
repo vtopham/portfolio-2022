@@ -74,7 +74,7 @@ body {
     
     display: flex;
     justify-content: center;
-    margin: 8% 0;
+    margin: 4% 0;
 
     .icon-container {
         display: flex;
@@ -123,3 +123,17 @@ body {
     content: "\f09b";
 }
 
+//Resume
+
+.resume-download-container {
+    margin: 4% 0;
+    display: flex;
+    justify-content: center;
+    
+    .resume-download {
+        color: $icon-color;
+        font-family: $body-font;
+        
+        
+    }
+}
