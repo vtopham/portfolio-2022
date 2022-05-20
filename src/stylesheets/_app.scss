@@ -1,0 +1,125 @@
+body {
+    margin: 0 auto;
+    width: 90%;
+    padding: 4% 0;
+
+    
+
+    @media only screen and (min-width: $desktop-min-width) {
+        width: 80vw;
+    }
+
+    p {
+        font-family: $body-font;
+        line-height: 1.4rem;
+    }
+
+}
+
+//Header
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    * {
+        margin: 2% 0;
+    }
+
+    .header-title {
+        font-family: $title-font;
+        font-size: 3.6rem;
+        text-align: center;
+
+    }
+
+}
+
+
+
+
+//Banner image
+.homepage-banner-container {
+    margin: 4% 0;
+    
+
+    .homepage-banner {
+        max-height: 150px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        @media only screen and (min-width: $tablet-min-width) {
+            max-height: 200px;
+        }
+    }
+}
+
+//Bio
+
+.homepage-bio {
+    margin: 2% 0;
+
+    p {
+        margin: 4% 0;
+    }
+}
+
+
+
+//Outside links
+
+.outside-links {
+    
+    display: flex;
+    justify-content: center;
+    margin: 8% 0;
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+        margin: 0 2%;
+
+        p {
+            margin-left: 5px;
+            color: $icon-color;
+        }
+    }
+
+
+}
+
+//Icon pseudoelements
+
+
+.icon::before {
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+  }
+.outside-links svg {
+    color: $icon-color;
+}
+
+.fa-solid::before, .fa-brands::before {
+    font: var(--fa-font-solid);
+}
+
+.fa-link::before {
+     content: "\f0c1";
+}
+
+.fa-envelope::before {
+    content: "\f0e0";
+}
+
+
+.fa-linkedin::before {
+    content: "\f08c";
+}
+
+.fa-github::before {
+    content: "\f09b";
+}
+

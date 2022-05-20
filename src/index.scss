@@ -1,7 +1,21 @@
+//Variables
+
+//Breakpoints
+$tablet-min-width: 480px;
+$desktop-min-width: 769px;
+
+//Fonts
+$title-font: 'Permanent Marker', cursive;
+$body-font: 'Roboto', sans-serif;
+
+//Colors
+$body-font-color: #2e2e2e;
+$icon-color: #8a8a8a;
+
 //Imports
 @import "./stylesheets/resets";
+@import "./stylesheets/app";
 
 
 
 
-//Variables

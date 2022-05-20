@@ -30,8 +30,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -54,7 +53,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -62,4 +61,105 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  padding: 4% 0;
+}
+@media only screen and (min-width: 769px) {
+  body {
+    width: 80vw;
+  }
+}
+body p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-container * {
+  margin: 2% 0;
+}
+.header-container .header-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.homepage-banner-container {
+  margin: 4% 0;
+}
+.homepage-banner-container .homepage-banner {
+  max-height: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media only screen and (min-width: 480px) {
+  .homepage-banner-container .homepage-banner {
+    max-height: 200px;
+  }
+}
+
+.homepage-bio {
+  margin: 2% 0;
+}
+.homepage-bio p {
+  margin: 4% 0;
+}
+
+.outside-links {
+  display: flex;
+  justify-content: center;
+  margin: 8% 0;
+}
+.outside-links .icon-container {
+  display: flex;
+  align-items: center;
+  margin: 0 2%;
+}
+.outside-links .icon-container p {
+  margin-left: 5px;
+  color: #8a8a8a;
+}
+
+.icon::before {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+}
+
+.outside-links svg {
+  color: #8a8a8a;
+}
+
+.fa-solid::before, .fa-brands::before {
+  font: var(--fa-font-solid);
+}
+
+.fa-link::before {
+  content: "\f0c1";
+}
+
+.fa-envelope::before {
+  content: "\f0e0";
+}
+
+.fa-linkedin::before {
+  content: "\f08c";
+}
+
+.fa-github::before {
+  content: "\f09b";
+}
+
 /*# sourceMappingURL=index.css.map */
