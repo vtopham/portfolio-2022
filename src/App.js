@@ -17,15 +17,15 @@ function App() {
           <p>Both my portfolio and GitHub are under construction but if you have any questions or just want to poke around, feel free to access the links below.</p>
       </div>
       <div className = "outside-links">
-        <a className = "icon-container" href = "https://www.linkedin.com/in/victoria-topham/" target = "_blank">
+        <a className = "icon-container" href = "https://www.linkedin.com/in/victoria-topham/" rel = "noreferrer" target = "_blank">
           <i className = "fa-brands fa-linkedin"></i>
           <p>LinkedIn</p>
         </a>
-        <a className = "icon-container" href = "https://github.com/vtopham" target = "_blank">
+        <a className = "icon-container" href = "https://github.com/vtopham" rel = "noreferrer" target = "_blank">
           <i className = "fa-brands fa-github"></i>
           <p>GitHub</p>
         </a>
-        <a className = "icon-container" href = "mailto:topham.victoria@gmail.com" target = "_blank">
+        <a className = "icon-container" href = "mailto:topham.victoria@gmail.com" rel = "noreferrer" target = "_blank">
           <i className = "fa-solid fa-envelope"></i>
           <p>Email</p>
         </a>
